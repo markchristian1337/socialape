@@ -2,9 +2,12 @@ const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 const app = require('express')();
 admin.initializeApp();
+require('dotenv').config();
+
+//console.log(process.env);
 
 const config = {
-    apiKey: "AIzaSyA21rK2tYBuDit7sVSOIZXc1S6CMIPVOls",
+    apiKey: process.env.API_KEY,
     authDomain: "socialape-c3879.firebaseapp.com",
     databaseURL: "https://socialape-c3879.firebaseio.com",
     projectId: "socialape-c3879",
