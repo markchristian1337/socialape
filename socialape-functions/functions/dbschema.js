@@ -8,6 +8,14 @@ let db = {
       commentCount: 2,
     },
   ],
+  comments: [
+    {
+      userHandle: "user",
+      screamId: "adsfkjdsfjkfks",
+      body: "Comment from dbschema!",
+      createdAt: "2020-01-01T10:59:52.798Z",
+    },
+  ],
 };
 
 const userDetails = {
